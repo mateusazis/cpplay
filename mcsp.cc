@@ -129,7 +129,7 @@ void handle_work(int64_t v) {
   }
 }
 
-int mcsp(int, char **) {
+int main(int, char **) {
   fclose(stdin);
   fclose(stderr);
   WorkManager<int64_t> mgr(/* workers= */ 10, /* capacity */ 1000, handle_work);
